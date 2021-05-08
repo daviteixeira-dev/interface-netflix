@@ -1,17 +1,154 @@
-@media screen and (max-width:700px){
-    header .container{
+/* Mobile S*/
+@media screen and (min-width:320px){
+    
+    header .header-container{
+        height: 6rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+    
+    header .header-container .main-menu .logo{
+        font-size: 2rem;
     }
 
-    .botao {
-        margin-top: 5px;
-        width: 300px;
+    header nav {
+        display: none;
+    }
+    
+    header .research {
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+    
+    header .research img {
+        height: 1.3rem;
+        margin-right: 1rem;
+    }
+    
+    /*Main Movie*/
+
+    .main-movie .main-movie-container .title{
+        font-size: 2rem;
+    }
+
+    .main-movie .main-movie-container .description{
+        font-size: 1.2rem;
+    }
+
+    .main-movie .main-movie-container .buttons .button {
+        width: 60%;
+        padding: 1rem;
+        display: flex;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .main-movie .main-movie-container .buttons .button i{
+        float: left;
     }
 }
 
-@media screen and (min-width:1000px){
-    .descricao{
-        width: 70%;
+/* Mobile M */
+@media screen and (min-width:375px){
+    
+    header .header-container .main-menu .logo{
+        font-size: 2.5rem;
+    }
+    
+    /*Main Movie*/
+
+    .main-movie .main-movie-container .title{
+        font-size: 3rem;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:768px){
+
+    header .header-container .main-menu {
+        width: 60%;
+        display: flex;
+        margin-left: 1rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header nav a {
+        font-size: 1.3rem;
+    }
+    
+    header .research {
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+
+    .research a{
+        font-size: 1.3rem;
+    }
+    
+    /*Main Movie*/
+
+    .main-movie .main-movie-container .title{
+        font-size: 4rem;
+    }
+
+    .main-movie .main-movie-container .description{
+        font-size: 1.5rem;
+    }
+
+    .main-movie .main-movie-container .buttons .button {
+        width: 40%;
+        padding: 1.5rem;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width:1024px){
+
+    header .header-container .main-menu {
+        width: 45%;
+    }
+
+    header .header-container .main-menu .logo{
+        font-size: 4rem;
+    }
+
+    header nav a {
+        font-size: 1.5rem;
+    }
+
+    header .research img {
+        height: 1.8rem;
+    }
+
+    .research a{
+        font-size: 1.5rem;
+    }
+
+    /*Main Movie*/
+
+    .main-movie .main-movie-container .title{
+        margin-top: 20%;
+    }
+
+    .main-movie .main-movie-container .buttons {
+        display: flex;
+    }
+
+    .main-movie .main-movie-container .buttons .button {
+        width: auto;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .main-movie .main-movie-container .buttons .play {
+        width: 15rem;
+        height: 5rem;
     }
 }
